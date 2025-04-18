@@ -1,0 +1,10 @@
+pandas
+python-docx
+torch>=1.9.0
+transformers>=4.11.0
+datasets>=1.11.0
+sentencepiece
+sacremoses
+accelerate
+scikit-learn
+matplotlib

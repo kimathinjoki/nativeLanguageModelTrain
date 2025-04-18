@@ -1,0 +1,7 @@
+docx
+pandas
+selenium
+requests
+beautifulsoup4
+python-docx
+fpdf
