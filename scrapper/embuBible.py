@@ -326,7 +326,7 @@ def main():
     custom_start = input("Do you want to start from a specific book and chapter? (y/n): ").lower() == 'y'
     
     # Starting URL (Genesis 1 in KKB Kikamba Bible)
-    current_url = "https://www.bible.com/bible/111/GEN.1.NIV"
+    current_url = "https://www.bible.com/bible/2770/GEN.1.KKB"
     
     if custom_start:
         print("\nAvailable books:")
@@ -351,11 +351,11 @@ def main():
         if valid_book and chapter_num.isdigit():
             chapter_int = int(chapter_num)
             if 1 <= chapter_int <= max_chapter:
-                current_url = f"https://www.bible.com/bible/111/{book_code}.{chapter_num}.NIV"
+                current_url = f"https://www.bible.com/bible/2770/{book_code}.{chapter_num}.KKB"
                 print(f"Starting from {book_code} chapter {chapter_num}")
             else:
                 print(f"Invalid chapter number. {book_code} has {max_chapter} chapters. Starting from chapter 1.")
-                current_url = f"https://www.bible.com/bible/111/{book_code}.1.NIV"
+                current_url = f"https://www.bible.com/bible/2770/{book_code}.1.KKB"
         else:
             print("Invalid book code or chapter. Starting from Genesis 1.")
     

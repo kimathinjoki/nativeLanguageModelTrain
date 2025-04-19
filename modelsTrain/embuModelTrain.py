@@ -191,8 +191,8 @@ def test_model(model, tokenizer, test_sentences):
 
 def main():
     # File paths
-    embu_bible_path = "../scrapper/bible_text/Complete_Bible_embu_full.docx"
-    english_bible_path = "../scrapper/bible_text/English_NIV_Bible.docx"  # You'll need to create this
+    embu_bible_path = "../scrapper/bible_text/Complete_Bible_Embu.docx"
+    english_bible_path = "../scrapper/bible_text/Complete_Bible_English_niv.docx"  
     
     # Check if English Bible exists, otherwise prompt user
     if not os.path.exists(english_bible_path):
